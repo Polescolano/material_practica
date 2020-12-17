@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Pac3</title>
+        <meta name="description" content="practica" />
+        <meta name="keywords" content="arquitectura">
+       <meta name="Autor" content="pol escolano">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+			<figure  class="logo">
+				<img src="images/edificios.svg" alt="edificios">
+			</figure>
+			<h1>Estudi<span>Arquitectura</span></h1>
+			<img class="netWorkIcons" src="images/sprite_icons.png" alt="sprite_icons">
+			<nav>
+				<ul>
+					<li><a href="index.html">INICIO</a></li>
+					<li><a href="#">EQUIPO</a></li>
+					<li><a href="proyecto.html">PROYECTOS</a></li>
+					<li><a href="edificios_singulares.html">EDIFICIOS SINGULARES</a></li>
+					<li><a href="#">PREMIOS</a></li>
+					<li><a href="contacto.html">CONTACTO</a></li>
+					<li class="buscar">
+                        <img src="images/icon_search.svg" alt="icon_search">
+						<input type="text" id="buscar" name="buscar" placeholder="Buscar">
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+            <article id="contactar">
+		
+                <h2>Contactar</h2>
+                <p>Si quiere un presupuesto, por favor, contacte con nosotros</p>
+    
+                <form>
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <div>
+                            <dl>
+                                <dt><label for="name" class="required">Nombre</label></dt>
+                                <dd><input type="text" id="nane" name="name" placeholder="Nombre" required></dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <dl>
+                                <dt><label for="surname" class="required">Apellidos</label></dt>
+                                <dd><input type="text" id="surname" name="surname" placeholder="Apellidos" required></dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <dl>
+                                <dt><label for="address" class="required">Calle y número</label></dt>
+                                <dd><input type="text" id="address" name="address" placeholder="Calle y número" required></dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <dl>
+                                <dt><label for="pais">País</label></dt>
+                                <dd><input type="text" id="pais" name="pais" placeholder="País" ></dd>
+                            </dl>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+                        <div>
+                            <dl>
+                                <dt><label for="email" class="required">Correo electrónico</label></dt>
+                                <dd><input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com" multiple required></dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <dl>
+                                <dt><label for="tel" class="required">Teléfono</label></dt>
+                                <dd><input type="tel" id="tel" name="tel" required></dd>
+                            </dl>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos del proyecto</legend>
+                        <div>
+                            <dl>
+                                <dt><label for="comment">Explícanos tu proyecto</label></dt>
+                                <dd><input type="text" id="comment" name="comment"></dd>
+                            </dl>
+                        </div>
+                    </fieldset>
+    
+                    <div>
+                        <p>Todos los campos con <span style="color: red; font-size:24px">*</span> son obligatorios</p>
+                        <input type="checkbox"  id="noticias" name="noticias" value="noticias" style="width: auto;">
+                        <label for="noticias">Apuntarme al boletín de noticias</label>
+                    </div>
+                    <div>
+                        <input type="checkbox"  id="acepto" name="acepto" value="acepto" requiered style="width: auto;">
+                        <label for="acepto" class="required">He leído y acepto la política de privacidad y las condiciones de uso </label>
+                    </div>
+                    <button class="btnDelete" type="submit">Delete</button>
+                    <button class="btnSend" type="submit">Submit</button>
+                </form>
+            </article>
+        </main>
+
+	<footer>
+		<table>
+		<ul>
+			<tr>
+				<td><li><a href="#">Colegio de Arquitectura</a></li></td>
+				<td><li><a href="#">Aviso Legal</a></li></td>
+			</tr>
+			<tr>
+				<td><li><a href="contacto.html">Contacto</a></li></td>
+				<td><li><a href="#">Accesibilidad</a></li></td>
+			</tr>
+			<tr>
+				<td><li><a href="#">Equipo</a></li></td>
+				<td><li><a href="#">Protección de datos</a></li></td>
+			</tr>	
+		</ul>
+		</table>
+		<p>Copyright: <span class="dotted">UOC</span> – Práctica Final de Lenguajes y estándares web (Diciembre - 2020)</p>
+    </footer>     
+    </body>
+</html>

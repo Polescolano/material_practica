@@ -1,0 +1,497 @@
+/* body */
+body {
+    margin: 0px;
+    padding: 0;
+	font-family: 'Roboto Slab',serif;
+	background-color: #fff;
+}
+
+main {
+    width: 890px;
+    max-width: 1200px; /*establecemos el ancho máximo del contenido*/
+    margin: 0px auto; /*centramos el contenido horizontalmente*/
+	background-color: #fff;
+	padding: 0px;
+}
+article{
+	background-color: #fff;
+	padding: 1%;
+	font-size: 12px;
+	/* top | right | bottom | left */
+	margin: 0px 30px 0px 30px;
+}
+#inicio{
+	/* top | right | bottom | left */
+	margin: 190px 30px 30px 30px;
+}
+blockquote{
+	border-bottom: 0.24em dotted #f56a6a;
+	border-top: 0.24em dotted #f56a6a;
+	margin: 0px;
+	text-align: right;
+	font-weight: bold;
+	background-color: silver;
+	text-align: justify;
+	padding: 25px;
+	padding-bottom: 15px;
+	margin-top: 20px;
+	position: relative;
+
+}
+blockquote:before {
+    content: "\00AB";
+    font-size: 30px;
+	color: #fff;
+	position: absolute;
+    left: 10px;
+	top: 5px;
+	font-weight: bold;
+}
+blockquote q{
+	font-style: italic;
+	font-family: 'Open Sans',sans-serif;
+	quotes: "" "";
+	text-align: justify;
+}
+blockquote cite{
+	font-size: 10px;
+	font-style: normal;	
+}
+
+
+/* Proyectos destacados */
+.box{
+	width: 50%;
+	height: 120px;
+	color: #000;
+	float: left;
+	margin-bottom: 20px;
+}
+.box figure{
+	width: 90px;
+	height: 90px;
+	padding: 15px;
+	float: left;
+	margin: 0px;
+	margin-left: 40px;
+}
+.box img{
+	width: 100px;
+	height: 100px;
+}
+.box div{
+	float: left;
+	width: 220px;
+	height: 110px;
+	/* top | right | bottom | left */
+	margin: 15px 0px 0px 12px
+}
+.box h5{
+	color: #f56a6a;
+	margin-top: 1px;
+	margin-bottom: 12px;
+	font-size: 12px;
+}
+.box p{
+	margin: 0px;
+	color: #000;
+	font-size: 10px;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+/*
+.box::after {
+	content: "";
+	clear: both;
+	display: block;
+} */
+.box a{
+	/* top | right | bottom | left */
+	padding: 6px 10px 6px 10px;
+	border: 0.1em solid #f56a6a;
+	border-radius: 10%;
+	font-size: 0.4rem;
+	font-weight: bold;
+	color: #f56a6a;
+	text-decoration: none;
+	transition: background-color 2s;
+}
+.box a:hover {
+	background-color:  #f56a6a;;
+	color: #fff;
+}
+	
+.titulos{
+	font-size: 30px;
+	margin-left: 15%;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* zona PROYECTO */
+#proyecto{
+	/* top | right | bottom | left */
+	padding: 0px 50px 0px 50px;
+	font-family: 'Open Sans',sans-serif;
+}
+
+#proyecto figure{
+	width: 300px;
+	float: left;
+}
+#proyecto img{
+	border: 2px solid #f56a6a;
+	width: 350px;
+}
+#proyecto figcaption{
+	font-size: 9px;
+}
+#proyecto table{
+	border-collapse: collapse;
+	/*width: 30%;*/
+	/* top | right | bottom | left */
+	margin: 26px 0px 50px 450px;
+}
+#proyecto td, th{
+	border: 2px solid #f56a6a;
+	text-align: left;
+	padding: 8px;
+	font-size: 9px;
+	font-weight: normal;
+}
+
+#proyecto p{
+	clear: both;
+	/* top | right | bottom | left */
+	margin: 10px 90px 30px 90px;
+	text-align: justify;
+}
+
+/* pagina EDIFICIOS SINGULARES */
+
+#singulares{
+	/* top | right | bottom | left */
+	padding: 0px 20px 50px 20px;
+	font-family: 'Open Sans',sans-serif;
+	margin: 0px;
+	height: auto;
+}
+#singulares p{
+	margin: 10px 80px 20px 80px;
+}	
+
+#singulares figure{
+	width: 270px;
+	float: left;
+	position: relative;
+	/* top | right | bottom | left */
+	margin: 00px 2px 15px 2px;
+}
+#singulares img{
+	width: 270px;
+	filter: grayscale(100%);
+}
+#singulares img:hover{
+	filter: grayscale(0%);
+}
+
+#singulares a{
+	font-size: 13px;
+	position: absolute;
+	bottom: 12%;
+  	left: 15%;
+ 	right: 0;
+  	background-color: #fff;
+	/*overflow: hidden;*/
+	color: #f56a6a;
+	padding: 2px;
+	border: 1px solid #fff;
+	text-decoration: none;
+	font-weight: bold;
+	width: 215px; 	
+	transition: height 1s;
+	height: 12px;
+}
+#singulares a:hover{
+	color: #fff;
+	height: 20px;
+	background-color: #f56a6a;
+	border: 1px solid #f56a6a;
+}
+
+
+
+
+
+
+
+/* pagina  CONTACTO */
+/* FORMULARIO */
+.required:after {
+    content:" *";
+	color: red;
+	font-size: 24px;
+}
+form{
+	width: 80%;
+	margin-left: 150px;
+	margin-bottom: 20px;
+}
+fieldset {
+	border: 0;
+	margin-top: 30px;
+}
+fieldset div{
+	margin-top: 10px;
+}
+legend{
+	font-weight: bold;
+}
+dt{
+	width: 20%;
+	float: left;
+	clear: both;
+}
+dd{
+	width: 70%;
+	float: left;	
+}	
+input{
+	width: 50%;
+}
+button {
+	padding: 5px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	margin-top: 20px;
+	width: 40%;
+}
+.btnSend{
+	background-color: #f56a6a; 
+	border: 1px solid #f56a6a;
+}
+.btnSend:hover {
+	background-color: #fff;
+	color: #f56a6a;
+}
+.btnDelete{
+	background-color: #fff;
+	border: 1px solid #f56a6a;
+	color: #f56a6a;
+}
+.btnDelete:hover {
+	background-color: #f56a6a;
+	color: #fff;
+}
+/* HEADER */
+/* header nav */
+header{
+	width: 100%;
+	height: 120px;
+	margin: 0px;
+}
+.logo{
+	/* top | right | bottom | left */
+	margin: 5px 0px 30px 5px;
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+.logo img{
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+h1{
+	float: left;
+	margin: 0px;
+	margin-top: 25px;
+	vertical-align: bottom;
+	color: #f56a6a;
+	font-family: 'Roboto Slab',serif;
+	font-size: 28px;
+	font-weight: bold;
+}
+h1 span{
+	color:#000;
+}
+.netWorkIcons{
+	float: right;
+	width: 100px;
+	margin: 10px;
+}
+.facebook{
+	width: 22px;
+    height: 25px;
+    background: url(../images/sprite_icons.png) 0 0;
+    background-size: 100px 50px;
+	background-repeat: no-repeat;
+	float: left;
+}
+.facebook:hover{
+	background: url(../images/sprite_icons.png) 0 -28px;
+    background-size: 100px 50px;
+	background-repeat: no-repeat;
+	float: left;
+}
+.twiter{
+	width: 22px;
+    height: 25px;
+    background: url(../images/sprite_icons.png) -26px 0;
+    background-size: 100px 50px;
+	background-repeat: no-repeat;
+	float: left;
+}
+.twiter:hover{
+    background: url(../images/sprite_icons.png) -26px -28px;
+    background-size: 100px 50px;
+	background-repeat: no-repeat;
+	float: left;
+}
+.pinterest{
+	width: 22px;
+    height: 25px;
+    background: url(../images/sprite_icons.png) -52px 0;
+    background-size: 100px 50px;
+	background-repeat: no-repeat;
+	float: left;
+}
+.pinterest:hover{
+    background: url(../images/sprite_icons.png) -52px -28px;
+    background-size: 100px 50px;
+	background-repeat: no-repeat;
+	float: left;
+}
+.instagram{
+	width: 22px;
+    height: 25px;
+    background: url(../images/sprite_icons.png) -79px  0;
+    background-size: 100px 50px;
+	background-repeat: no-repeat;
+	float: left;
+}
+.instagram:hover{
+    background: url(../images/sprite_icons.png) -79px -28px;
+    background-size: 100px 50px;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+
+
+nav {
+	height: 1.5em;
+	width: 100%;
+	float: left;
+	border-bottom: 0.15em solid #f56a6a;
+}
+  
+nav ul {
+	height: 100%;
+	padding: 0;
+	/*display: flex;*/
+	margin: 0px;
+}
+  
+nav li {
+	display: inline;
+	text-align: center;
+	/*flex: 1;*/
+	/* top | right | bottom | left */
+	margin: 5px 0px 5px 20px;
+}
+  
+nav a {
+	display: inline-block;
+	font-family: 'Roboto Slab',serif;
+	font-size: 0.7rem;
+	color: #000;
+	text-decoration: none;
+	margin: 0px;
+}
+nav a:hover{
+	color: #f56a6a;
+}
+.buscar input{
+	width: 100px;
+	border: 0.05em solid silver;
+	border-radius: 10%;
+	height: 15px;
+	font-size: 0.6rem;
+	float: right;
+}
+.buscar img{
+	width: 15px;
+	float: right;
+	margin: 0px 10px 0px 5px;
+}
+
+.imgcap{
+	float: left;
+	margin: 0px;
+	width: 100%;
+	height: 170px;
+	position: relative;
+}
+.imgcap img{
+	margin: 0px;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+.imgcap figcaption {
+	position: absolute;
+	width: 55%;
+	top: 45%;
+	left: 3%;
+	transform: translate(0%, -50%);
+	color:#fff;
+	text-shadow: 2px 1px #000;
+	font-size: 30px;
+  }
+
+/* END HEADER */
+
+/* FOOTER */
+
+footer{
+	width: 100%;
+	font-family: 'Open Sans',sans-serif;
+	background-color: #4c566a;
+	clear: both;
+	padding: 1px;
+}
+footer table{
+	width: 70%;
+	/* top | right | bottom | left */
+	margin: 10px 0px 50px 30%;
+	border-collapse: collapse;
+}
+
+footer td{
+	width: 50%;
+	border: 0px;
+	text-align: left;
+}
+footer li{
+	list-style:none;
+}
+footer a{
+	color:#f56a6a;
+	text-decoration: none;
+	font-size: 11px;
+}
+footer p{
+	width: 70%;
+	/* top | right | bottom | left */
+	margin: 10px 0px 50px 30%;
+	font-size: 11px;
+	line-height: 1.6;
+	color: white;
+}
+.dotted {
+	border-bottom: 1px #fff dashed;
+}
